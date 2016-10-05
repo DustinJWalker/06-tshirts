@@ -1,5 +1,6 @@
 .shop-item {
   border: $c-primary solid 2px;
+
 }
 
 .shop-item__details {
@@ -8,7 +9,6 @@
   justify-content: center;
   color: $c-primary;
   text-align: center;
-
 
 }
 
@@ -23,27 +23,71 @@
 .shop-item__actions-btn {
   display: flex;
   flex-grow: 1;
-  justify-content: center;
-
+  justify-content: space-around;
   border: $c-primary 1px solid;
   background-color: $c-white;
   color: $c-primary;
+  padding: 1rem;
+
+}
+
+.shop-menu__tooltip {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  flex-wrap: wrap;
+  top: 17.3rem;
+  width: 3rem;
+
+
 }
 
 .shop-menu__tooltip-item {
+
+  padding: 1rem;
+  border: $c-primary 1px solid;
+
+  &:hover {
+    background-color: $c-white;
+    width: 3.1rem;
+
+  }
+
+
   &--color-red {
     color: $c-pink;
+    &:hover {
+      background-color: $c-white;
+      width: 3.1rem;
+
+    }
   }
 
   &--color-blue {
     color: $c-blue;
+    &:hover {
+      background-color: $c-white;
+      width: 3.1rem;
+
+    }
   }
 
   &--color-yellow {
     color: $c-yellow;
+    &:hover {
+      background-color: $c-white;
+      width: 3.1rem;
+
+    }
   }
 
   &--color-green {
     color: $c-green;
+    &:hover {
+      background-color: $c-white;
+      width: 3.1rem;
+
+    }
   }
+
 }
