@@ -28,21 +28,34 @@
   background-color: $c-white;
   color: $c-primary;
   padding: 1rem;
-    &:hover {
-      background-color: $c-primary;
-      color: $c-white;
 
-    }
+  &:hover {
+    background-color: $c-primary;
+    color: $c-white;
+
+  }
 
 }
 
+.shop-menu  {
+  &:hover {
+    color: $c-white;
+    .shop-menu__tooltip {
+      display: flex;
+      background: $c-white;
+      color: $c-primary;
+
+    }
+  }
+}
 .shop-menu__tooltip {
-  display: flex;
+  display: none;
   position: absolute;
   flex-direction: column;
   flex-wrap: wrap;
   top: 17.3rem;
   width: 3rem;
+
   &:hover {
     background: $c-white;
     color: $c-primary;
