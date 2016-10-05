@@ -1,0 +1,23 @@
+.shop-item__details  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  color: $c-primary;
+
+}
+
+.shop-item__actions  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-item__frame  {
+  margin: $c-gutter;
+}
+
+
+.shop-item__actions-btn  {
+  border: $c-primary 1px solid;
+  color: $c-primary;
+}
