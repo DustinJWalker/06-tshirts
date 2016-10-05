@@ -2,11 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: $c-primary 1px solid;
+
     &__item {
       flex-grow: 1;
       margin: 1rem;
       width: calc(100% / 3 - 8rem);
-      border: $c-primary 1px solid;
+
     }
 }

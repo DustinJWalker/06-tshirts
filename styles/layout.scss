@@ -1,24 +1,49 @@
-.shop-item__details  {
+.shop-item {
+  border: $c-primary solid 2px;
+}
+
+.shop-item__details {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
   color: $c-primary;
+  text-align: center;
+
 
 }
 
-.shop-item__actions  {
+.shop-item__actions {
   display: flex;
-  justify-content: space-between;
 }
 
-.shop-item__frame  {
+.shop-item__frame {
   margin: $c-gutter;
 }
 
+.shop-item__actions-btn {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
 
-.shop-item__actions-btn  {
   border: $c-primary 1px solid;
   background-color: $c-white;
   color: $c-primary;
+}
+
+.shop-menu__tooltip-item {
+  &--color-red {
+    color: $c-pink;
+  }
+
+  &--color-blue {
+    color: $c-blue;
+  }
+
+  &--color-yellow {
+    color: $c-yellow;
+  }
+
+  &--color-green {
+    color: $c-green;
+  }
 }
