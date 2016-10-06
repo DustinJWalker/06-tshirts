@@ -47,6 +47,21 @@
 }
 
 .shop-menu {
+  &__tooltip {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    top: 16.5rem;
+    width: 3rem;
+
+    &:hover {
+      background: $c-white;
+      color: $c-primary;
+    }
+  }
+
   &:hover {
     color: $c-white;
 
@@ -57,23 +72,6 @@
 
     }
   }
-}
-
-.shop-menu__tooltip {
-  display: none;
-  position: absolute;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  top: 16.5rem;
-  width: 3rem;
-
-
-  &:hover {
-    background: $c-white;
-    color: $c-primary;
-  }
-
 }
 
 .shop-menu__tooltip-item {
@@ -93,7 +91,6 @@
     &:hover {
       background-color: $c-white;
       width: 3.1rem;
-
 
     }
   }
@@ -147,32 +144,32 @@
 
   }
 
-  &.shop-item  {
-  display: flex;
-  flex-direction: row;
-
-
-  &__actions  {
+  &.shop-item {
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: row;
 
-  &__actions-btn {
-    border-left: $c-primary 1px solid;
-    &:first-of-type {
-      border-top: none;
+    &__actions {
+      display: flex;
+      flex-direction: column;
     }
-    border-right: none;
-  }
 
-}
+    &__actions-btn {
+      border-left: $c-primary 1px solid;
+
+      &:first-of-type {
+        border-top: none;
+      }
+      border-right: none;
+    }
+
+  }
 
   .shop-menu__tooltip {
 
     display: none;
     flex-direction: row;
     height: inherit;
-    top: 6.5%;
+    /*top: 6.5%;*/
     left: 60%;
     width: 29%;
 
@@ -182,10 +179,5 @@
     }
 
   }
-
-
-
-
-
 
 }
