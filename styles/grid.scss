@@ -6,7 +6,7 @@
     &__item {
       flex-grow: 1;
       margin: 1rem;
-      width: calc(100% / 3 - 8rem);
+      flex-basis: calc(100% / 3 - 2rem);
 
     }
 }

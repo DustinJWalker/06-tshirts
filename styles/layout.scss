@@ -25,6 +25,13 @@
   flex-grow: 1;
   justify-content: space-around;
   border: $c-primary 1px solid;
+  border-bottom: none;
+  border-left: none;
+
+  &:last-of-type {
+    border-right: none;
+  }
+
   background-color: $c-white;
   color: $c-primary;
   padding: 1rem;
@@ -37,9 +44,10 @@
 
 }
 
-.shop-menu  {
+.shop-menu {
   &:hover {
     color: $c-white;
+
     .shop-menu__tooltip {
       display: flex;
       background: $c-white;
@@ -48,12 +56,13 @@
     }
   }
 }
+
 .shop-menu__tooltip {
   display: none;
   position: absolute;
   flex-direction: column;
   flex-wrap: wrap;
-  top: 17.3rem;
+  top: 16.8rem;
   width: 3rem;
 
   &:hover {
@@ -114,4 +123,17 @@
     }
   }
 
+}
+
+//grid-flex starts @ line 13, ends @ 244
+@media (max-width: 768px) {
+  .grid {
+    position: relative;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+
+  }
 }
