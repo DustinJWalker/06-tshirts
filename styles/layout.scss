@@ -90,6 +90,7 @@
       background-color: $c-white;
       width: 3.1rem;
 
+
     }
   }
 
@@ -128,12 +129,19 @@
 //grid-flex starts @ line 13, ends @ 244
 @media (max-width: 768px) {
   .grid {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
   }
 
   &__item {
     display: flex;
     flex-direction: row;
-
   }
+
+  &.shop-item  {
+  display: flex;
+  flex-direction: row;
+}
+
 }
