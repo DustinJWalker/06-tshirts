@@ -14,6 +14,7 @@
 
 .shop-item__actions {
   display: flex;
+
 }
 
 .shop-item__frame {
@@ -24,7 +25,7 @@
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
-  border: $c-primary 1px solid;
+  border: $c-primary 2px solid;
   border-bottom: none;
   border-left: none;
 
@@ -32,11 +33,12 @@
     border-right: none;
   }
 
+  padding: 1rem;
   background-color: $c-white;
   color: $c-primary;
-  padding: 1rem;
 
   &:hover {
+
     background-color: $c-primary;
     color: $c-white;
 
@@ -62,8 +64,10 @@
   position: absolute;
   flex-direction: column;
   flex-wrap: wrap;
-  top: 16.8rem;
+  flex-grow: 1;
+  top: 16.5rem;
   width: 3rem;
+
 
   &:hover {
     background: $c-white;
@@ -73,9 +77,9 @@
 }
 
 .shop-menu__tooltip-item {
-
+  position: relative;
   padding: 1rem;
-  border: $c-primary 1px solid;
+  border: $c-primary 2px solid;
 
   &:hover {
     background-color: $c-white;
@@ -131,17 +135,57 @@
   .grid {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
+    flex-basis: calc(100% / 3 - 1rem);
+
   }
 
   &__item {
     display: flex;
     flex-direction: row;
+
   }
 
   &.shop-item  {
   display: flex;
   flex-direction: row;
+
+
+  &__actions  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__actions-btn {
+    border-left: $c-primary 1px solid;
+    &:first-of-type {
+      border-top: none;
+    }
+    border-right: none;
+  }
+
 }
+
+  .shop-menu__tooltip {
+
+    display: none;
+    flex-direction: row;
+    height: inherit;
+    top: 6.5%;
+    left: 60%;
+    width: 29%;
+
+    &:hover {
+      background: $c-white;
+      color: $c-primary;
+    }
+
+  }
+
+
+
+
+
 
 }
