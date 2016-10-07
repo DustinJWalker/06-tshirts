@@ -15,6 +15,8 @@
 .shop-item__actions {
   display: flex;
 
+  position: absolute;
+
 }
 
 .shop-item__frame {
@@ -23,7 +25,8 @@
 
 .shop-item__actions-btn {
   display: flex;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
+
   justify-content: space-around;
   border: $c-primary 2px solid;
   border-bottom: none;
@@ -49,14 +52,16 @@
 .shop-menu {
   &__tooltip {
     display: none;
-    position: absolute;
+    position: relative;
+
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
-    top: 16.5rem;
+    bottom: 14rem;
     width: 3rem;
 
     &:hover {
+
       background: $c-white;
       color: $c-primary;
     }
@@ -75,11 +80,12 @@
 }
 
 .shop-menu__tooltip-item {
-  position: relative;
+
   padding: 1rem;
   border: $c-primary 2px solid;
 
   &:hover {
+
     background-color: $c-white;
     width: 3.1rem;
 
@@ -133,7 +139,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    position: relative;
+
     flex-basis: calc(100% / 3 - 1rem);
 
   }
