@@ -14,9 +14,8 @@
 
 .shop-item__actions {
   display: flex;
-
-  position: absolute;
-
+  flex-direction: row;
+  // position: absolute;
 }
 
 .shop-item__frame {
@@ -25,10 +24,10 @@
 
 .shop-item__actions-btn {
   display: flex;
-  /*flex-grow: 1;*/
+  justify-content: center;
+  flex-grow: 1;
 
-  justify-content: space-around;
-  border: $c-primary 2px solid;
+  border: $c-primary 1px solid;
   border-bottom: none;
   border-left: none;
 
@@ -49,16 +48,17 @@
 
 }
 
+.shop-item__actions-btn {
+  position: relative;
+}
+
 .shop-menu {
   &__tooltip {
     display: none;
-    position: relative;
+    position: absolute;
 
     flex-direction: column;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    bottom: 14rem;
-    width: 3rem;
+    bottom: 2rem;
 
     &:hover {
 
@@ -87,7 +87,7 @@
   &:hover {
 
     background-color: $c-white;
-    width: 3.1rem;
+    height: 3.1rem;
 
   }
 
@@ -96,7 +96,7 @@
 
     &:hover {
       background-color: $c-white;
-      width: 3.1rem;
+      height: 3.1rem;
 
     }
   }
@@ -106,7 +106,7 @@
 
     &:hover {
       background-color: $c-white;
-      width: 3.1rem;
+      height: 3.1rem;
 
     }
   }
@@ -116,7 +116,7 @@
 
     &:hover {
       background-color: $c-white;
-      width: 3.1rem;
+      height: 3.1rem;
 
     }
   }
@@ -126,7 +126,7 @@
 
     &:hover {
       background-color: $c-white;
-      width: 3.1rem;
+      height: 3.1rem;
 
     }
   }
@@ -134,7 +134,7 @@
 }
 
 //grid-flex starts @ line 13, ends @ 244
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 480px) {
   .grid {
     display: flex;
     flex-wrap: wrap;
@@ -160,12 +160,15 @@
     }
 
     &__actions-btn {
-      border-left: $c-primary 1px solid;
-
-      &:first-of-type {
-        border-top: none;
-      }
+      position: relative;
+      border-left: $c-primary 2px solid;
       border-right: none;
+        &:first-of-type {
+          border-top: none;
+        }
+
+
+
     }
 
   }
@@ -173,15 +176,19 @@
   .shop-menu__tooltip {
 
     display: none;
-    flex-direction: row;
-    height: inherit;
-    /*top: 6.5%;*/
-    left: 60%;
-    width: 29%;
+    position: absolute;
+    flex-direction: row-reverse;
+    //top: 1rem;
+    bottom: -0.5rem;
 
+    right: 2.85rem;
+    //width: 100%;
     &:hover {
+
+      display: flex;
       background: $c-white;
       color: $c-primary;
+
     }
 
   }
