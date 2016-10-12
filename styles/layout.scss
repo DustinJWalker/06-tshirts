@@ -83,7 +83,11 @@
 .shop-menu__tooltip-item {
 
   padding: 1rem;
-  border: $c-primary 2px solid;
+  border: $c-primary 1px solid;
+
+  &:first-of-type {
+    border-bottom:  none;
+  }
 
   &:hover {
 
