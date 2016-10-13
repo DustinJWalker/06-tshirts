@@ -92,7 +92,7 @@
   border: $c-primary 1px solid;
 
   &:first-of-type {
-    border-bottom:  none;
+    // border-bottom:  none;
   }
 
   &:hover {
@@ -175,9 +175,7 @@
       position: relative;
       border-left: $c-primary 2px solid;
       border-right: none;
-        &:first-of-type {
-          border-top: none;
-        }
+
 
 
 
