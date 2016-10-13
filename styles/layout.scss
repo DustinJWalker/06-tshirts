@@ -1,4 +1,7 @@
 .shop-item {
+  display: flex;
+  flex-direction: column;
+
   border: $c-primary solid 2px;
   margin: 0;
 
@@ -20,7 +23,9 @@
 }
 
 .shop-item__frame {
+
   margin: $c-gutter;
+
 }
 
 .shop-item__actions-btn {
@@ -34,6 +39,7 @@
 
   &:last-of-type {
     border-right: none;
+
   }
 
   padding: 1rem;
@@ -150,8 +156,9 @@
   }
 
   &__item {
-    display: flex;
+
     flex-direction: row;
+
 
   }
 
