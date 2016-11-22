@@ -63,16 +63,15 @@
   &__tooltip {
     display: none;
     position: absolute;
+    bottom: 100%;
 
     flex-direction: column;
-    bottom: 2.1rem;
     width: 100%;
+    margin: 0;
 
-    &:hover {
-
-      background: $c-white;
-      color: $c-primary;
-    }
+    background: $c-white;
+    color: $c-primary;
+    border: $c-primary 1px solid;
   }
 
   &:hover {
@@ -80,9 +79,6 @@
 
     .shop-menu__tooltip {
       display: flex;
-      background: $c-white;
-      color: $c-primary;
-
     }
   }
 }
@@ -90,10 +86,10 @@
 .shop-menu__tooltip-item {
 
   padding: 1rem;
-  border: $c-primary 1px solid;
+  border-top: $c-primary 1px solid;
 
   &:first-of-type {
-    // border-bottom:  none;
+    border-top: 0;
   }
 
   &:hover {
@@ -173,7 +169,7 @@
 
     &__actions-btn {
       position: relative;
-      border-left: $c-primary 2px solid;
+      border-left: $c-primary 1px solid;
       border-right: none;
 
     }
@@ -181,21 +177,19 @@
   }
 
   .shop-menu__tooltip {
-    display: none;
-    position: absolute;
-    flex-direction: row-reverse;
-    //top: 1rem;
-    bottom: -0.8rem;
-    right: 2.85rem;
-    //width: 100%;
-    &:hover {
+    right: 100%;
+    bottom: 0;
+    flex-direction: row;
+    width: auto;
+  }
 
-      display: flex;
-      background: $c-white;
-      color: $c-primary;
+  .shop-menu__tooltip-item {
+    border-top: 0;
+    border-right: $c-primary 1px solid;
 
+    &:last-of-type {
+      border-right: 0;
     }
-
   }
 
 }
