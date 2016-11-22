@@ -1,0 +1,195 @@
+.shop-item {
+  display: flex;
+  flex-direction: column;
+
+  border: $c-primary solid 2px;
+  margin: 0;
+
+}
+
+.shop-item__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: $c-primary;
+  text-align: center;
+
+}
+
+.shop-item__actions {
+  display: flex;
+  flex-direction: row;
+  // position: absolute;
+}
+
+.shop-item__frame {
+
+  margin: $c-gutter;
+
+}
+
+.shop-item__actions-btn {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+
+  border: $c-primary 1px solid;
+  border-bottom: none;
+  border-left: none;
+
+  &:last-of-type {
+    border-right: none;
+
+  }
+
+  padding: 1rem;
+  background-color: $c-white;
+  color: $c-primary;
+
+  &:hover {
+
+    background-color: $c-primary;
+    color: $c-white;
+
+  }
+
+}
+
+.shop-item__actions-btn {
+  position: relative;
+}
+
+.shop-menu {
+  &__tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+
+    background: $c-white;
+    color: $c-primary;
+    border: $c-primary 1px solid;
+  }
+
+  &:hover {
+    color: $c-white;
+
+    .shop-menu__tooltip {
+      display: flex;
+    }
+  }
+}
+
+.shop-menu__tooltip-item {
+
+  padding: 1rem;
+  border-top: $c-primary 1px solid;
+
+  &:first-of-type {
+    border-top: 0;
+  }
+
+  &:hover {
+
+    background-color: $c-white;
+    height: 3.1rem;
+
+  }
+
+  &--color-red {
+    color: $c-pink;
+
+    &:hover {
+      background-color: $c-white;
+      height: 3.1rem;
+
+    }
+  }
+
+  &--color-blue {
+    color: $c-blue;
+
+    &:hover {
+      background-color: $c-white;
+      height: 3.1rem;
+
+    }
+  }
+
+  &--color-yellow {
+    color: $c-yellow;
+
+    &:hover {
+      background-color: $c-white;
+      height: 3.1rem;
+
+    }
+  }
+
+  &--color-green {
+    color: $c-green;
+
+    &:hover {
+      background-color: $c-white;
+      height: 3.1rem;
+
+    }
+  }
+
+}
+
+//grid-flex starts @ line 13, ends @ 244
+@media (max-width: 768px) and (min-width: 480px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    flex-basis: calc(100% / 3 - 1rem);
+
+  }
+
+  &__item {
+
+    flex-direction: row;
+
+  }
+
+  &.shop-item {
+    display: flex;
+    flex-direction: row;
+
+    &__actions {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__actions-btn {
+      position: relative;
+      border-left: $c-primary 1px solid;
+      border-right: none;
+
+    }
+
+  }
+
+  .shop-menu__tooltip {
+    right: 100%;
+    bottom: 0;
+    flex-direction: row;
+    width: auto;
+  }
+
+  .shop-menu__tooltip-item {
+    border-top: 0;
+    border-right: $c-primary 1px solid;
+
+    &:last-of-type {
+      border-right: 0;
+    }
+  }
+
+}
