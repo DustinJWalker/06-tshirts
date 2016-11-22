@@ -65,7 +65,8 @@
     position: absolute;
 
     flex-direction: column;
-    bottom: 2rem;
+    bottom: 2.1rem;
+    width: 100%;
 
     &:hover {
 
@@ -178,19 +179,16 @@
 
 
 
-
     }
 
   }
 
   .shop-menu__tooltip {
-
     display: none;
     position: absolute;
     flex-direction: row-reverse;
     //top: 1rem;
-    bottom: -0.5rem;
-
+    bottom: -0.8rem;
     right: 2.85rem;
     //width: 100%;
     &:hover {
@@ -202,5 +200,7 @@
     }
 
   }
+
+
 
 }
